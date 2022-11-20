@@ -8,7 +8,7 @@ const cardImages = [
     {"src": "/img/cplusplus.png", matched: false},
     {"src": "/img/react.png", matched: false},
     {"src": "/img/angular.png", matched: false},
-    {"src": "/img/img.png", matched: false},
+    {"src": "/img/vue.png", matched: false},
 ]
 
 function App() {
