@@ -1,9 +1,12 @@
 import './SingleCard.css'
 
-export const SingleCard = ({card,handleChoice, flipped}) => {
+export const SingleCard = ({card,handleChoice, flipped, disabled}) => {
 
     const handleClick = () => {
-        handleChoice(card)
+        // You can only flip the cards when the disabled state is not true.
+        if (!disabled){
+            handleChoice(card)
+        }
     }
 
     return (

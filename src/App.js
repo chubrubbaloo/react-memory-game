@@ -17,6 +17,7 @@ function App() {
     const [turns, setTurns] = useState(0);
     const [choiceOne, setChoiceOne] = useState(null);
     const [choiceTwo, setChoiceTwo] = useState(null);
+    const [disabled, setDisabled] = useState(false);
 
     // Shuffles 12 cards randomly and gives each card a random id every time the on click event triggers.
     const shuffleCards = () => {
@@ -24,6 +25,8 @@ function App() {
             .sort(() => Math.random() - 0.5)
             .map((card) => ({...card, id: Math.random()}))
 
+        setChoiceOne(null);
+        setChoiceTwo(null);
         setCards(shuffleCards)
         setTurns(0);
     }
@@ -36,6 +39,7 @@ function App() {
     // compare 2 selected cards
     useEffect(() => {
         if (choiceOne && choiceTwo) {
+            setDisabled(true)
 
             if (choiceOne.src === choiceTwo.src) {
                 setCards(prevCards => {
@@ -62,12 +66,18 @@ function App() {
         setChoiceOne(null);
         setChoiceTwo(null);
         setTurns(prevTurns => prevTurns + 1);
+        setDisabled(false)
     }
+
+    useEffect(() => {
+        shuffleCards()
+    }, [])
+
 
     return (
         <div className="App">
-            <h1>Hello World!</h1>
             <button onClick={shuffleCards}>New Game</button>
+            <h3>Amount of tries: {turns} </h3>
 
             <div className="card-grid">
                 {cards.map(card => (
@@ -76,6 +86,7 @@ function App() {
                         card={card}
                         handleChoice={handleChoice}
                         flipped={card === choiceOne || card === choiceTwo || card.matched}
+                        disabled={disabled}
                     />
                 ))}
             </div>
