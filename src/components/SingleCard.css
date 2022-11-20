@@ -12,9 +12,22 @@
 /* Shows the front of the card (the img) */
 .card .front {
     transform: rotateY(90deg);
+    transition: all ease-in 0.2s;
     position: absolute;
 }
 
 .flipped .front {
     transform: rotateY(0deg);
+    transition-delay: 0.2s;
+}
+
+/* Shows the back of the card (the cover up) */
+.card .back {
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+}
+
+.flipped .back {
+    transform: rotateY(90deg);
+    transition-delay: 0s;
 }
