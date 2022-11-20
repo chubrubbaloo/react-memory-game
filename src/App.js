@@ -3,12 +3,12 @@ import {useEffect, useState} from "react";
 import {SingleCard} from "./components/SingleCard";
 
 const cardImages = [
-    {"src": "/img/helmet-1.png", matched: false },
-    {"src": "/img/potion-1.png", matched: false },
-    {"src": "/img/ring-1.png", matched: false },
-    {"src": "/img/scroll-1.png", matched: false },
-    {"src": "/img/shield-1.png", matched: false },
-    {"src": "/img/sword-1.png", matched: false },
+    {"src": "/img/helmet-1.png", matched: false},
+    {"src": "/img/potion-1.png", matched: false},
+    {"src": "/img/ring-1.png", matched: false},
+    {"src": "/img/scroll-1.png", matched: false},
+    {"src": "/img/shield-1.png", matched: false},
+    {"src": "/img/sword-1.png", matched: false},
 ]
 
 function App() {
@@ -41,7 +41,7 @@ function App() {
                 setCards(prevCards => {
                     return prevCards.map(card => {
                         if (card.src === choiceOne.src) {
-                            return { ...card, matched: true }
+                            return {...card, matched: true}
                         } else {
                             return card
                         }
@@ -49,7 +49,7 @@ function App() {
                 })
                 resetTurn()
             } else {
-                resetTurn()
+                setTimeout(() => resetTurn(), 1000);
             }
 
         }
@@ -75,6 +75,7 @@ function App() {
                         key={card.id}
                         card={card}
                         handleChoice={handleChoice}
+                        flipped={card === choiceOne || card === choiceTwo || card.matched}
                     />
                 ))}
             </div>

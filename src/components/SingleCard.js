@@ -1,6 +1,6 @@
 import './SingleCard.css'
 
-export const SingleCard = ({card,handleChoice}) => {
+export const SingleCard = ({card,handleChoice, flipped}) => {
 
     const handleClick = () => {
         handleChoice(card)
@@ -9,7 +9,7 @@ export const SingleCard = ({card,handleChoice}) => {
     return (
         <div>
             <div className="card">
-                <div>
+                <div className={flipped ? "flipped" : ""}> {/*Toggles between two styles*/}
                     <img src={card.src} className="front" alt="card front"/>
                     <img
                         src="/img/cover.png"
