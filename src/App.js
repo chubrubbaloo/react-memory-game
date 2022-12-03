@@ -1,7 +1,7 @@
 import './App.css';
 import {useEffect, useState} from "react";
 import {SingleCard} from "./components/SingleCard";
-import {RxReset} from "react-icons/rx";
+import {MdRestartAlt} from "react-icons/md";
 
 const cardImages = [
     {"src": "/img/javascript.png", matched: false},
@@ -77,7 +77,7 @@ function App() {
 
     return (
         <div className="App">
-            <button onClick={shuffleCards}> <RxReset className="restart-icon"/> New Game</button>
+            <button onClick={shuffleCards}> <MdRestartAlt className="restart-icon"/> New Game</button>
             <h3>Amount of tries: {turns} </h3>
             <div className="card-grid">
                 {cards.map(card => (
