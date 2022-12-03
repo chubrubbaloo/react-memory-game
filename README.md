@@ -6,10 +6,11 @@ Live demo: https://memory-game-chubrubaloo.netlify.app/
 ![image](https://user-images.githubusercontent.com/71407043/202921113-e07ab5fa-1cc5-46f9-8911-17ba32665a25.png)
 
 
-<h3>Bibliotek</h3>
+<h3>Bibliotek & Paket</h3>
 <hr>
 <ul>
 <li> <a href='https://reactjs.org/' target="_blank">React</a></li>
+  <li> <a href='https://react-icons.github.io/react-icons' target="_blank">React-Icons</a></li>
 </ul>
 
 <h3>Mål & personliga tankar</h3>
