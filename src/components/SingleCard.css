@@ -2,6 +2,9 @@
     position: relative;
 }
 
+.card:hover{
+    cursor: pointer;
+}
 .card img {
     width: 90%;
     display: block;

@@ -1,6 +1,7 @@
 import './App.css';
 import {useEffect, useState} from "react";
 import {SingleCard} from "./components/SingleCard";
+import {RxReset} from "react-icons/rx";
 
 const cardImages = [
     {"src": "/img/javascript.png", matched: false},
@@ -36,7 +37,7 @@ function App() {
         choiceOne ? setChoiceTwo(card) : setChoiceOne(card)
     }
 
-    // compare 2 selected cards
+    // compare 2 selected cards and display the cards for 1000ms.
     useEffect(() => {
         if (choiceOne && choiceTwo) {
             setDisabled(true)
@@ -61,7 +62,7 @@ function App() {
 
     console.log(cards)
 
-    // Reset choices & increases users turn amount
+    // Reset choices & increases users turn amount.
     const resetTurn = () => {
         setChoiceOne(null);
         setChoiceTwo(null);
@@ -76,9 +77,8 @@ function App() {
 
     return (
         <div className="App">
-            <button onClick={shuffleCards}>New Game</button>
+            <button onClick={shuffleCards}> <RxReset className="restart-icon"/> New Game</button>
             <h3>Amount of tries: {turns} </h3>
-
             <div className="card-grid">
                 {cards.map(card => (
                     <SingleCard
