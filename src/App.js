@@ -56,11 +56,8 @@ function App() {
             } else {
                 setTimeout(() => resetTurn(), 1000);
             }
-
         }
     }, [choiceOne, choiceTwo])
-
-    console.log(cards)
 
     // Reset choices & increases users turn amount.
     const resetTurn = () => {
