@@ -6,7 +6,7 @@ export const Home = () => {
 
     return (
         <div>
-            <h1>Home page!</h1>
+            <h1>Memory Game</h1>
             <button onClick={() => navigate("/memory-game")}>Play the game!</button>
         </div>
     )

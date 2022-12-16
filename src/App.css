@@ -9,12 +9,22 @@
     margin: 40px auto;
 }
 
+.rules-icon{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    font-size: 25px;
+    margin-right: 3px;
+}
+
 .restart-icon {
     display: flex;
     align-items: center;
     justify-self: center;
     font-size: 25px;
 }
+
+
 
 button {
     margin: 20px auto;

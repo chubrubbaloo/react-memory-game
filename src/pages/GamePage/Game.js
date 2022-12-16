@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import {SingleCard} from "../../components/SingleCard";
-import {MdRestartAlt} from "react-icons/md";
+import {MdOutlineVideogameAsset, MdRestartAlt} from "react-icons/md";
+import {useNavigate} from "react-router-dom";
 
 const cardImages = [
     {"src": "/img/javascript.png", matched: false},
@@ -12,6 +13,8 @@ const cardImages = [
 ]
 
 export const Game = () => {
+
+    const navigate = useNavigate();
 
     const [cards, setCards] = useState([]);
     const [turns, setTurns] = useState(0);
@@ -72,6 +75,7 @@ export const Game = () => {
 
         return (
             <div className="App">
+                <button onClick={() => navigate("/")}> <MdOutlineVideogameAsset className="rules-icon"/> Rules</button>
                 <button onClick={shuffleCards}> <MdRestartAlt className="restart-icon"/> New Game</button>
                 <h3>Amount of tries: {turns} </h3>
                 <div className="card-grid">
