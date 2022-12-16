@@ -4,6 +4,30 @@
     box-sizing: border-box;
 }
 
+h2,p{
+    margin: 20px;
+}
+
+.yatta {
+    width: 500px;
+}
+
+.rules-img{
+    width: 500px;
+}
+
+@media only screen and (max-width: 550px) {
+    .yatta, .rules-img {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .yatta, .rules-img {
+        width: 225px;
+    }
+}
+
 .App {
     max-width: 800px;
     margin: 40px auto;
