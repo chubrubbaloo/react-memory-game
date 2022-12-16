@@ -1,6 +1,6 @@
 import {useNavigate} from "react-router-dom";
-import yatta from './yatta.png';
-import pics from './front-end-images.png'
+import yatta from '../../images/yatta.png';
+import pics from '../../images/front-end-images.png'
 
 export const Home = () => {
 

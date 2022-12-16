@@ -4,13 +4,7 @@ import {Game} from "./pages/GamePage/Game";
 import {Home} from "./pages/HomePage/Home";
 import {ErrorPage} from "./pages/errorPage/ErrorPage";
 
-
-
 function App() {
-
-
-
-
     return (
         <div className="App">
             <BrowserRouter>

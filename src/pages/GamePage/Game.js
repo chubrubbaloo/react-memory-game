@@ -3,7 +3,6 @@ import {SingleCard} from "../../components/SingleCard";
 import {MdOutlineVideogameAsset, MdRestartAlt} from "react-icons/md";
 import {useNavigate} from "react-router-dom";
 
-
 const cardImages = [
     {"src": "img/javascript.png", matched: false},
     {"src": "img/html.png", matched: false},

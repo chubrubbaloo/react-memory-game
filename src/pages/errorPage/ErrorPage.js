@@ -1,4 +1,4 @@
-import error from './error.png'
+import error from '../../images/error.png'
 import {useNavigate} from "react-router-dom";
 
 export const ErrorPage = () => {
