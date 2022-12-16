@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {SingleCard} from "../components/SingleCard";
+import {SingleCard} from "../../components/SingleCard";
 import {MdRestartAlt} from "react-icons/md";
 
 const cardImages = [
