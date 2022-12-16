@@ -5,12 +5,12 @@ import {useNavigate} from "react-router-dom";
 
 
 const cardImages = [
-    {"src": "../../img/javascript.png", matched: false},
-    {"src": "../../img/html.png", matched: false},
-    {"src": "../../img/css.png", matched: false},
-    {"src": "../../img/react.png", matched: false},
-    {"src": "../../img/angular.png", matched: false},
-    {"src": "../../img/vue.png", matched: false},
+    {"src": "img/javascript.png", matched: false},
+    {"src": "img/html.png", matched: false},
+    {"src": "img/css.png", matched: false},
+    {"src": "img/react.png", matched: false},
+    {"src": "img/angular.png", matched: false},
+    {"src": "img/vue.png", matched: false},
 ]
 
 export const Game = () => {

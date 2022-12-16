@@ -1,5 +1,4 @@
 import './SingleCard.css'
-import cover from '../img/cover.png'
 
 export const SingleCard = ({card,handleChoice, flipped, disabled}) => {
 
@@ -16,7 +15,7 @@ export const SingleCard = ({card,handleChoice, flipped, disabled}) => {
                 <div className={flipped ? "flipped" : ""}> {/*Toggles between two styles*/}
                     <img src={card.src} className="front" alt="card front"/>
                     <img
-                        src={cover}
+                        src='/img/cover.png'
                         className="back"
                         alt="card back"
                         onClick={handleClick}
