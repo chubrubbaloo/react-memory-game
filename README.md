@@ -17,4 +17,4 @@ Live demo: https://memory-game-chubrubaloo.netlify.app/
 
 <h3>Mål & personliga tankar</h3>
 <hr>
-Ännu ett projekt jag byggde vid sidan av studierna där jag vidareutvecklar mina kunskaper inom React. Målet var att bygga ett simpelt spel som går ut på att gissa rätt par kort på så få försök som möjligt. Sedan var det andra målet att få en någorlunda responsiv webbdesign med hjälp av CSS så att man även kan spela på en telefon. 
+Ett projekt jag byggde vid sidan av studierna där jag vidareutvecklar mina kunskaper inom React. Målet var att bygga ett simpelt spel som går ut på att gissa rätt par kort på så få försök som möjligt. Sedan var det andra målet att få en någorlunda responsiv webbdesign med hjälp av CSS så att man även kan spela på en telefon. 
